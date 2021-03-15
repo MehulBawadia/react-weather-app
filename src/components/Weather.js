@@ -5,17 +5,12 @@ const Weather = () => {
   const [city, setCity] = useState(null);
   const [search, setSearch] = useState(null);
 
-  useEffect(() => {
-    const fetchApi = async () => {
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=${process.env.REACT_APP_OW_API_KEY}`;
-      const response = await fetch(url);
-
-      const resJson = await response.json();
-      setCity(resJson.main);
-    };
-
-    fetchApi();
-  }, [search]);
+  const fetchApi = async () => {
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=${process.env.REACT_APP_OW_API_KEY}`;
+    const response = await fetch(url);
+    const resJson = await response.json();
+    setCity(resJson.main);
+  };
 
   return (
     <div className="weather">
@@ -30,6 +25,13 @@ const Weather = () => {
           }}
         />
       </div>
+
+      <div>
+        <button type="button" className="btnSearch" onClick={fetchApi}>
+          Submit
+        </button>
+      </div>
+
       {!city ? (
         <p>No Data Found</p>
       ) : (
