@@ -1,0 +1,48 @@
+.weather {
+  border: 1px solid rgb(184, 179, 179);
+  border-radius: 8px;
+  width: 500px;
+  padding: 3rem 2rem;
+  background-color: rgb(238, 238, 238);
+}
+
+.weather .title {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.weather .inputField {
+  min-width: 400px;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+  background: #fff;
+}
+
+.weather .inputField:focus {
+  outline: none;
+}
+
+.weather .information {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+
+.weather .location {
+  font-size: 1.75rem;
+}
+
+.weather .temperature {
+  width: 500px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+}
