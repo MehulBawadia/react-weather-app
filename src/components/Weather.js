@@ -3,7 +3,7 @@ import "./Weather.css";
 
 const Weather = () => {
   const [city, setCity] = useState(null);
-  const [search, setSearch] = useState("Mumbai");
+  const [search, setSearch] = useState(null);
 
   useEffect(() => {
     const fetchApi = async () => {
