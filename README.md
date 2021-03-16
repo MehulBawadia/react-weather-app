@@ -8,3 +8,7 @@ API key is used in the .env.local file which is ignored from the repository, sav
 ```
 REACT_APP_OW_API_KEY=<your-key-here>
 ```
+
+#### Screenshot
+
+![Weather App Screenshot](./public/weather-app-screenshot.png)
