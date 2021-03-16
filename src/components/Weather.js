@@ -42,8 +42,12 @@ const Weather = () => {
             </div>
 
             <div className="temperature">
-              <div className="minTemperature">Min: {city.temp_min}* Cel</div>
-              <div className="maxTemperature">Max: {city.temp_max}* Cel</div>
+              <div className="minTemperature">
+                Min: {city.temp_min}&deg; Cel
+              </div>
+              <div className="maxTemperature">
+                Max: {city.temp_max}&deg; Cel
+              </div>
             </div>
           </div>
         </div>
